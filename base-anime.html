@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome Anime</title>
+
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="stylesheet" href="Style/anime-page.css">
+    <link rel="stylesheet" href="Style/responsive.css">
+    
+    <script src="Js/sidebar.js"></script>
+    <script src="Js/icon.js"></script>
+    <script src="Js/script.js"></script>
+</head>
+<body>
+    <!--Menu bar-->
+    <nav class="nav">
+        <ul>
+            <li><a href=".html"><i class="fa-solid fa-arrow-down-a-z"></i> Lista Anime</a></li>
+            <li><a href=".html"><i class="fa-solid fa-bars-progress"></i> In corso</a></li>
+            <li><a href=".html"><i class="fa-solid fa-filter"></i> Filtro</a></li>
+            <li><a onclick="randomAnime();"><i class="fa-solid fa-shuffle"></i> Random Anime</a></li>
+            <li style="float:right"><a class="login">Login / SignUp</a></li>
+        </ul>
+    </nav>
+    <!-- Sidebar -->
+    <nav class="burger">
+        <div id="burgerNav" class="overlay">
+            <span class="closebtn" onclick="closeNav()">&times;</span>
+            <div class="overlay-content">
+                <a href="index.html">Lista Anime</a>
+                <a href="services.html">Anime in corso</a>
+                <a href="products.html">Filtro</a>
+                <a class="random" onclick="randomAnime();">Random Anime</a>
+                <br>
+                <a class="login">Login / SignUp</a>
+            </div>
+        </div>
+        <span id="burgerIcon" onclick="openNav()">&#9776;</span>
+    </nav>
+
+    <main>
+        <center class="col-10 col-12-tel">
+            <div class="section">
+                <span class="name">Anime Title</span>
+            </div>
+            
+            <div class="section">
+                <video></video>
+            </div>
+
+            <div class="section">
+                <span class="title"><i class="fa-solid fa-circle-info"></i> Info</span>
+            </div>
+        </center>
+    </main>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="stylesheet" href="Style/index.css">
+    <link rel="stylesheet" href="Style/responsive.css">
+    
+    <script src="Js/sidebar.js"></script>
+    <script src="Js/icon.js"></script>
+    <script src="Js/script.js"></script>
+</head>
+
+<body>
+    <!--Menu bar-->
+    <nav class="nav">
+        <ul>
+            <li><a href=".html"><i class="fa-solid fa-arrow-down-a-z"></i> Lista Anime</a></li>
+            <li><a href=".html"><i class="fa-solid fa-bars-progress"></i> In corso</a></li>
+            <li><a href=".html"><i class="fa-solid fa-filter"></i> Filtro</a></li>
+            <li><a onclick="randomAnime();"><i class="fa-solid fa-shuffle"></i> Random Anime</a></li>
+            <li style="float:right"><a class="login">Login / SignUp</a></li>
+        </ul>
+    </nav>
+    <!-- Sidebar -->
+    <nav class="burger">
+        <div id="burgerNav" class="overlay">
+            <span class="closebtn" onclick="closeNav()">&times;</span>
+            <div class="overlay-content">
+                <a href="index.html">Lista Anime</a>
+                <a href="services.html">Anime in corso</a>
+                <a href="products.html">Filtro</a>
+                <a class="random" onclick="randomAnime();">Random Anime</a>
+                <br>
+                <a class="login">Login / SignUp</a>
+            </div>
+        </div>
+        <span id="burgerIcon" onclick="openNav()">&#9776;</span>
+    </nav>
+    
+    <center class="col-10 col-12-tel">
+        <div class="overview">
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <a href="https://www.animesaturn.it/anime/Kaguya-sama-Love-is-War-3"><img src="Img/Kaguya3.png"
+                            class="slydes"></a>
+                    <div class="text"><a
+                            href="https://www.animesaturn.it/anime/Kaguya-sama-Love-is-War-3-a">Kaguya-sama: Love is War
+                            3</a></div>
+                </div>
+
+                <div class="mySlides fade">
+                    <a href="https://www.animesaturn.it/anime/Komi-Cant-Communicate-2"><img src="Img/Komi.png"
+                            class="slydes"></a>
+                    <div class="text"><a href="https://www.animesaturn.it/anime/Komi-Cant-Communicate-2">Komi Can't
+                            Communicate 2</a></div>
+                </div>
+                <div class="mySlides fade">
+                    <a href="https://www.animesaturn.it/anime/Skeleton-Knight-in-Another-World"><img
+                            src="Img/Skeleton.png" class="slydes"></a>
+                    <div class="text"><a
+                            href="https://www.animesaturn.it/anime/Skeleton-Knight-in-Another-World">Skeleton Knight in
+                            Another World</a></div>
+                </div>
+                <div class="mySlides fade">
+                    <a href="https://www.animesaturn.it/anime/The-Rising-of-the-Shield-Hero-2"><img
+                            src="Img/TheRising2.png" class="slydes"></a>
+                    <div class="text"><a href="https://www.animesaturn.it/anime/The-Rising-of-the-Shield-Hero-2">The
+                            Rising of the Shield Hero 2</a></div>
+                </div>
+
+                <div class="mySlides fade">
+                    <a href="https://www.animesaturn.it/anime/Spy-x-Family"><img src="Img/Spyx.png" class="slydes"></a>
+                    <div class="text"><a href="https://www.animesaturn.it/anime/Spy-x-Family">Spy x Family</a></div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+            </div>
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+        <div class="section">
+            <p style="text-align: left;"><span class="title"><i class="fa-solid fa-table-list"></i> Ultimi
+                    Episodi</span></p>
+            <!-- Qui ci vanno gli anime -->
+        </div>
+        <div class="section">
+            <p style="text-align: left;"><span class="title"><i class="fa-solid fa-plus"></i> Ultimi Anime</span></p>
+            <!-- Qui ci vanno gli anime  -->
+        </div>
+        <div class="section">
+            <p style="text-align: left;"><span class="title"><i class="fa-solid fa-shuffle"></i> Anime Random</span></p>
+            <!-- Qui ci vanno i random anime -->
+        </div>
+        <br><br><br><br><br><br><br><br>a
+    </center>
+</body>
+</html>

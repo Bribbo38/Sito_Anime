@@ -1,0 +1,8 @@
+.name {
+	padding: 0.5em 4em;
+	display: inline-block;
+	margin: 10px;
+	background-color: white;
+	font-weight: 400;
+	border-radius: 0.25em;
+}

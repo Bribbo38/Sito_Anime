@@ -1,0 +1,181 @@
+:root {
+	--background_color: #111;
+	--background_transparent: rgba(60, 60, 60, 0.95);
+	--navbar_bg: #333;
+	--scrollbar_thumb_color: rgba(253, 254, 255, 40%);
+	--overlay_bg: rgba(90, 90, 90, 0.9);
+	--overlay_content_bg: rgba(20, 20, 20, 0.7);
+	--overlay_text_color: #b1b1b1;
+	--overlay_text_hover_color: #f1f1f1;
+	--login_bg: #717171;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Verdana, sans-serif;
+	background-color: var(--background_color);
+}
+
+img {
+	vertical-align: middle;
+}
+
+.login {
+	background-color: var(--login_bg);
+}
+
+/* Structure */
+
+center {
+	margin-top: 2%;
+	padding: 1%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	min-height: 40vw;
+}
+
+.overview {
+	padding: 1%;
+	background-color: var(--background_transparent);
+	border-radius: 0.5em;
+}
+
+.section {
+	margin-top: 1%;
+	padding: 1%;
+	background-color: var(--background_transparent);
+	border-radius: 0.5em;
+}
+
+.title {
+	padding: 0.2em 2em;
+	display: inline-block;
+	margin: 10px;
+	background-color: white;
+	font-weight: 400;
+	border-radius: 0.25em;
+}
+
+img {
+	vertical-align: middle;
+}
+
+.icon {
+	width: 8px;
+}
+
+/* Scrool bar */
+
+::-webkit-scrollbar {
+	width: 8px;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--scrollbar_thumb_color);
+}
+
+/* NavBar */
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: var(--navbar_bg);
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+
+li {
+	float: left;
+	border-right: 1px solid #bbb;
+}
+
+li:last-child {
+	border-right: none;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover:not(.active) {
+	background-color: var(--background_color);
+}
+
+/* SlideBar */
+.overlay {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: var(--overlay_bg);
+	overflow-x: hidden;
+	transition: 0.5s;
+}
+
+.overlay-content {
+	background-color: var(--overlay_content_bg);
+	border-radius: 10px;
+	position: relative;
+	top: 25%;
+	width: max-content;
+	margin: 0 auto;
+	text-align: center;
+	padding: 6%;
+}
+
+.overlay a,
+.random,
+.overlay .login {
+	text-decoration: underline;
+	font-size: 6.5vw;
+	color: var(--overlay_text_color);
+	display: block;
+	transition: 0.3s;
+	line-height: 300%;
+	border-radius: 20px;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+	color: var(--overlay_text_hover_color);
+}
+
+.overlay .closebtn {
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	top: 5px;
+	font-size: 14vw;
+	color: var(--overlay_text_hover_color);
+}
+
+.burger {
+	display: none;
+}
+
+#burgerIcon {
+	font-size: 30px;
+	cursor: pointer;
+	color: white;
+	display: inline-block;
+	width: min-content;
+	transition: .6s;
+}

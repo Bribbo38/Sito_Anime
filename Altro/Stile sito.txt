@@ -1,0 +1,9 @@
+usare i tag per identificare gli anime.
+
+HOME: ultimi anime -> in uscita (ep) -> random -> button random anime
+
+NAV-BAR: Tutti gli anime (a-z) -> in corso -> ricerca filtro (Nome, Tag, anno) -> login/sign up -> Preferiti 
+
+ANIME PAGE: Add Preferito anime login
+
+EasterEGG: pagina speciale ;)
