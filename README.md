@@ -1,4 +1,4 @@
-#Sito_Anime
+Sito_Anime
 
 Un Progetto per la scuola, un sito web di hosting fatto in HTML, CSS, JS
 
